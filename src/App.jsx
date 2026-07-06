@@ -1,6 +1,10 @@
 function App() {
   return (
-    <h1>Hello Portfolio</h1>
+    <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+      <h1 className="text-5xl font-bold text-cyan-400">
+        My Portfolio 🚀
+      </h1>
+    </div>
   );
 }
 
