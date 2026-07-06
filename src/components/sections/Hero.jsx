@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section>
+    <section id="hero" className="min-h-screen flex items-center justify-center">
       Hero
     </section>
   )

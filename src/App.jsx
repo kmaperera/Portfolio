@@ -6,6 +6,7 @@ import Footer from "./components/layout/Footer";
 import About from "./components/sections/About";
 import Hero from "./components/sections/Hero";
 import Experience from "./components/sections/Experience";
+import Education from "./components/sections/Education";
 import Button from "./components/ui/Button";
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Experience />
       <Projects />
+      <Experience />
+      <Education />
       <Contact />
       <Footer />
     </div>

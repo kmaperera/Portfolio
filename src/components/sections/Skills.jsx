@@ -1,6 +1,6 @@
 function Skills() {
   return (
-    <section>
+    <section id="skills" className="min-h-screen flex items-center justify-center">
       Skills
     </section>
   )
