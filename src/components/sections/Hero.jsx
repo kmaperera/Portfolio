@@ -10,10 +10,25 @@ import {
  import Button from "../ui/Button";
 
 function Hero() {
+  const roleSequence = personal.roles.flatMap((role) => [role, 2000]);
+  const socialLinks = [
+  {
+    icon: <FaGithub />,
+    url: personal.github,
+  },
+  {
+    icon: <FaLinkedin />,
+    url: personal.linkedin,
+  },
+  {
+    icon: <MdEmail />,
+    url: `mailto:${personal.email}`,
+  },
+];
   return (
     <section
-      id="hero"
-      className="relative min-h-screen bg-slate-950 overflow-hidden text-white flex items-center"
+    id="hero"
+    className="relative min-h-screen bg-slate-950 overflow-hidden text-white flex items-center"
     >
       <div className="absolute inset-0 overflow-hidden">
       <div className="absolute top-40 left-20 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl"></div>
@@ -37,16 +52,9 @@ function Hero() {
 
           <h2 className="text-2xl text-gray-300 mt-6">
             <TypeAnimation
-              sequence={[
-                "Full Stack Developer",
-                2000,
-                "Backend Developer",
-                2000,
-                "Software Engineer",
-                2000,
-              ]}
+              sequence={roleSequence}
               wrapper="span"
-              speed={40}
+              speed={45}
               repeat={Infinity}
               className="text-cyan-400 text-2xl md:text-3xl font-semibold"
             />
@@ -65,20 +73,18 @@ function Hero() {
               Contact Me
             </Button>
 
-            <div className="flex gap-6 mt-10 text-3xl">
-
-              <a href={personal.github}>
-                <FaGithub className="hover:text-cyan-400 transition" />
-              </a>
-
-              <a href={personal.linkedin}>
-                <FaLinkedin className="hover:text-cyan-400 transition" />
-              </a>
-
-              <a href={`mailto:${personal.email}`}>
-                <MdEmail className="hover:text-cyan-400 transition" />
-              </a>
-
+            <div className="flex gap-6 mt-8 text-3xl">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cyan-400 transition duration-300 hover:scale-110"
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
         </motion.div>
@@ -90,12 +96,31 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex justify-center"
         >
+          <motion.div
+            animate={{ 
+              y: [0, -12, 0],
+            }}
+            transition={{
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}>
+              <div className="relative">
+              <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-3xl"></div>
           <img
             src={profile}
-            alt="Malith Perera"
-            className="w-80 h-80 rounded-full object-cover border-4 border-cyan-500 shadow-2xl"
+            alt={personal.name}
+            className="relative w-80 h-80 rounded-full object-cover border-4 border-cyan-400"
           />
+          </div>
+          </motion.div>
         </motion.div>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <span className="text-gray-400 text-sm">
+          Scroll Down ↓
+        </span>
       </div>
     </section>
   );
