@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import { label } from "framer-motion/client";
 
 const navItems = [
   { label: "Home", to: "hero" },
   { label: "About", to: "about" },
   { label: "Skills", to: "skills" },
+  { label: "Experience", to: "experience" },
   { label: "Projects", to: "projects" },
+  { label: "Education", to: "education" },
   { label: "Contact", to: "contact" },
 ];
 
@@ -35,9 +38,16 @@ function Navbar() {
       <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
 
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-cyan-400 cursor-pointer">
-          Malith
-        </h1>
+        <Link
+          to="hero"
+          smooth={true}
+          duration={500}
+          offset={-80}
+        >
+          <h1 className="text-2xl font-bold text-cyan-400 cursor-pointer">
+            Malith
+          </h1>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8">
@@ -48,6 +58,7 @@ function Navbar() {
                 smooth={true}
                 duration={500}
                 spy={true}
+                hashSpy={true}
                 offset={-80}
                 activeClass="text-cyan-400"
                 className="cursor-pointer text-gray-300 hover:text-cyan-400 transition-colors"
