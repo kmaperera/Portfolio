@@ -7,7 +7,7 @@ import {
  } from "react-icons/fa";
  import { MdEmail } from "react-icons/md";
  import {motion} from "framer-motion";
- import Button from "../ui/Button";
+ import Button from "../ui/Button"; 
 
 function Hero() {
   const roleSequence = personal.roles.flatMap((role) => [role, 2000]);
@@ -30,7 +30,7 @@ function Hero() {
     id="hero"
     className="relative min-h-screen bg-slate-950 overflow-hidden text-white flex items-center"
     >
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
       <div className="absolute top-40 left-20 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl"></div>
 
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl"></div>
@@ -65,9 +65,25 @@ function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-5 mt-10">
-            <Button>
+            <a
+              href="/resume.pdf"
+              download="Malith_Perera_CV.pdf"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                px-6
+                py-3
+                rounded-lg
+                bg-cyan-500
+                text-slate-950
+                font-semibold
+                hover:bg-cyan-400
+                transition-all
+              "
+            >
               Download CV
-            </Button>
+            </a>
 
             <Button variant="secondary">
               Contact Me
