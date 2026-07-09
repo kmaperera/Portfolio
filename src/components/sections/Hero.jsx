@@ -94,6 +94,13 @@ function Hero() {
                 <a
                   key={index}
                   href={social.url}
+                  aria-label={
+                    social.url.includes("github")
+                      ? "GitHub Profile"
+                      : social.url.includes("linkedin")
+                      ? "LinkedIn Profile"
+                      : "Send Email"
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-cyan-400 transition duration-300 hover:scale-110"
@@ -125,7 +132,7 @@ function Hero() {
               <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-3xl"></div>
           <img
             src={profile}
-            alt={personal.name}
+            alt="Portrait of Malith Perera"
             className="relative w-80 h-80 rounded-full object-cover border-4 border-cyan-400"
           />
           </div>

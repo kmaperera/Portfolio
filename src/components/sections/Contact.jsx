@@ -35,6 +35,7 @@ function Contact() {
         <div className="grid md:grid-cols-3 gap-6 mt-16">
           <a
             href="mailto:malith.perera2021@gmail.com"
+            aria-label="Send email to Malith Perera"
             className="
               bg-slate-900
               rounded-xl
@@ -59,6 +60,7 @@ function Contact() {
 
           <a
             href="tel:+94769867801"
+            aria-label="Call Malith Perera"
             className="
               bg-slate-900
               rounded-xl
@@ -82,6 +84,7 @@ function Contact() {
 
           <a
             href="https://maps.google.com/?q=Panadura,Sri Lanka"
+            aria-label="Open Panadura location in Google Maps"
             className="
               bg-slate-900
               rounded-xl

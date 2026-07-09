@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-slate-900 border-t border-slate-800 text-white">
+    <footer className="bg-slate-900 border-t border-slate-800 text-white" aria-label="Site footer">
       <div className="max-w-6xl mx-auto px-6 py-10">
 
         <h2 className="text-2xl font-bold text-center">
@@ -19,25 +19,28 @@ function Footer() {
             href="https://github.com/kmaperera"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Malith Perera's GitHub profile (opens in a new tab)"
             className="text-gray-400 hover:text-cyan-400 transition"
           >
-            <FaGithub size={24} />
+            <FaGithub size={24} aria-hidden="true" />
           </a>
 
           <a
             href="https://www.linkedin.com/in/kmaperera"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Malith Perera's LinkedIn profile (opens in a new tab)"
             className="text-gray-400 hover:text-cyan-400 transition"
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin size={24} aria-hidden="true" />
           </a>
 
           <a
             href="mailto:malith.perera2021@gmail.com"
+            aria-label="Send an email to Malith Perera"
             className="text-gray-400 hover:text-cyan-400 transition"
           >
-            <FaEnvelope size={24} />
+            <FaEnvelope size={24} aria-hidden="true" />
           </a>
 
         </div>
@@ -49,6 +52,7 @@ function Footer() {
               behavior: "smooth",
             })
           }
+          aria-label="Scroll to the top of the page"
           className="
             w-12
             h-12
