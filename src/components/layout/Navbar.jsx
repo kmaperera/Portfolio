@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
-import { label } from "framer-motion/client";
 
 const navItems = [
   { label: "Home", to: "hero" },
@@ -35,7 +34,10 @@ function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <nav 
+        aria-label="Main navigation"
+        className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4"
+      >
 
         {/* Logo */}
         <Link
@@ -43,6 +45,7 @@ function Navbar() {
           smooth={true}
           duration={500}
           offset={-80}
+          aria-label="Go to Home section"
         >
           <h1 className="text-2xl font-bold text-cyan-400 cursor-pointer">
             Malith
@@ -72,9 +75,16 @@ function Navbar() {
         {/* Mobile Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
           className="md:hidden text-3xl text-white"
         >
-          {menuOpen ? <HiOutlineX /> : <HiOutlineMenu />}
+          {menuOpen ? (
+            <HiOutlineX aria-hidden="true" /> 
+          ) : (
+            <HiOutlineMenu aria-hidden="true" />
+          )}
         </button>
       </nav>
 

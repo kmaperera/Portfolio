@@ -5,11 +5,13 @@ function Education() {
   return (
     <section
       id="education"
+      aria-labelledby="education-heading"
       className="py-28 bg-slate-900 text-white"
     >
       <div className="max-w-5xl mx-auto px-6">
 
       <motion.h2
+        id="education-heading"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

@@ -9,12 +9,14 @@ function Projects() {
   return (
     <section
     id="projects"
+    aria-labelledby="projects-heading"
     className="py-28 bg-slate-950 text-white"
     >
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Section Title */}
         <motion.h2
+          id="projects-heading"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

@@ -78,6 +78,7 @@ function ProjectCard({ project, onView }) {
 
           <button
               onClick={() => onView(project)}
+              aria-label={`View details for ${project.title}`}
               className="
                 relative
                 inline-block

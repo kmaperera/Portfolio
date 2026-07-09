@@ -6,11 +6,13 @@ function Experience() {
   return (
     <section
       id="experience"
+      aria-labelledby="experience-heading"
       className="py-28 bg-slate-900 text-white"
     >
       <div className="max-w-6xl mx-auto px-6">
 
         <motion.h2
+          id="experience-heading"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

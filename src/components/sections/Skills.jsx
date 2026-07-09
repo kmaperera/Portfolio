@@ -6,11 +6,13 @@ function Skills() {
   return (
     <section
       id="skills"
+      aria-labelledby="skills-heading"
       className="py-28 bg-slate-950 text-white"
     >
       <div className="max-w-6xl mx-auto px-6">
 
         <motion.h2
+          id="skills-heading"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -31,7 +33,7 @@ function Skills() {
 
         <div className="grid md:grid-cols-2 gap-8 mt-16">
           {skills.map((group) => (
-            <motion.div
+            <motion.section
               key={group.category}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +53,7 @@ function Skills() {
                   />
                 ))}
               </div>
-            </motion.div>
+            </motion.section>
           ))}
         </div>
 
