@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const navItems = [
-  { label: "Home", to: "hero" },
   { label: "About", to: "about" },
   { label: "Skills", to: "skills" },
   { label: "Experience", to: "experience" },
@@ -41,11 +40,11 @@ function Navbar() {
 
         {/* Logo */}
         <Link
-          to="hero"
+          to="about"
           smooth={true}
           duration={500}
           offset={-80}
-          aria-label="Go to Home section"
+          aria-label="Go to About section"
         >
           <h1 className="text-2xl font-bold text-cyan-400 cursor-pointer">
             Malith
