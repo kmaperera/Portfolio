@@ -1,28 +1,28 @@
-function SkillBadge({ 
-    skill,
-    small = false,
-}) {
+function SkillBadge({ skill }) {
   return (
-    <span
-      className={`
-        rounded-xl
-        bg-slate-800
-        border
-        border-slate-700
-        text-gray-200
-        transition
-        duration-300
-        hover:border-cyan-400
+    <div
+      className="
+        flex
+        flex-col
+        items-center
+        gap-2
+        text-gray-300
         hover:text-cyan-400
-        ${
-          small
-            ? "text-xs px-3 py-1"
-            : "text-sm px-4 py-2"
-        }
-      `}
+        transition-all
+        duration-300
+      "
     >
-      {skill}
-    </span>
+      {skill.icon && (
+        <skill.icon
+          className="text-4xl"
+          aria-hidden="true"
+        />
+      )}
+
+      <span className="text-sm text-center">
+        {skill.name}
+      </span>
+    </div>
   );
 }
 

@@ -1,23 +1,107 @@
+import {
+  FaReact,
+  FaJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaJava,
+  FaGitAlt
+} from "react-icons/fa";
+
+import { 
+  SiTailwindcss,
+  SiExpress,
+  SiMysql,
+  SiFirebase,
+  SiPostman,
+  SiFigma,
+  SiDart,
+  SiC
+} from "react-icons/si";
+
 const skills = [
   {
     category: "Programming",
-    items: ["Java", "JavaScript", "C", "Dart"],
+    items: [
+      {
+        name: "Java",
+        icon: FaJava,
+      },
+      {
+        name: "JavaScript",
+        icon: FaJs,
+      },
+      { 
+        name: "C",
+        icon: SiC
+      },
+      {
+        name: "Dart",
+        icon: SiDart,
+      },
+    ],
   },
   {
     category: "Frontend",
-    items: ["React", "HTML", "CSS", "Tailwind CSS"],
+    items: [
+      {
+        name: "React",
+        icon: FaReact,
+      },
+      {
+        name: "HTML",
+        icon: FaHtml5,
+      },
+      {
+        name: "CSS",
+        icon: FaCss3Alt,
+      },
+      {
+        name: "Tailwind CSS",
+        icon: SiTailwindcss,
+      },
+    ],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Express.js"],
+    category: "Backend & Database",
+    items: [
+      {
+        name: "Node.js",
+        icon: FaNodeJs,
+      },
+      {
+        name: "Express.js",
+        icon: SiExpress,
+      },
+      {
+        name: "MySQL",
+        icon: SiMysql,
+      },
+      { 
+        name: "MS SQL Server",
+      },
+      {
+        name: "Firebase",
+        icon: SiFirebase
+      },
+    ],
   },
   {
-    category: "Database",
-    items: ["MySQL", "MS SQL Server", "Firebase"],
-  },
-  {
-    category: "Tools",
-    items: ["Git", "GitHub", "Postman", "Figma"],
+    category: "Tools & Others",
+    items: [
+      {
+        name: "Git",
+        icon: FaGitAlt,
+      },
+      {
+        name: "Postman",
+        icon : SiPostman,
+      },
+      {
+        name: "Figma",
+        icon: SiFigma,
+      },
+    ],
   },
 ];
 

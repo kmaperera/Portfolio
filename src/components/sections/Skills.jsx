@@ -16,6 +16,7 @@ function Skills() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
           className="text-4xl font-bold text-center"
         >
           Skills
@@ -31,29 +32,38 @@ function Skills() {
           applications.
         </motion.p>
 
-        <div className="grid md:grid-cols-2 gap-8 mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mt-16">
           {skills.map((group) => (
-            <motion.section
+            <motion.article
               key={group.category}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="bg-slate-900 border border-slate-800 rounded-xl p-6"
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="
+                bg-slate-900 
+                border 
+                border-slate-800 
+                rounded-2xl 
+                p-6 
+                hover:border-cyan-400
+                transition-all
+                duration-300"
             >
-              <h3 className="text-xl font-semibold text-cyan-400 mb-5">
+              <h3 className="text-xl font-bold text-cyan-400 mb-8">
                 {group.category}
               </h3>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="
+              grid grid-cols-3 gap-6">
                 {group.items.map((skill) => (
                   <SkillBadge
-                    key={skill}
+                    key={skill.name}
                     skill={skill}
                   />
                 ))}
               </div>
-            </motion.section>
+            </motion.article>
           ))}
         </div>
 
