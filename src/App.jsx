@@ -8,6 +8,7 @@ import Hero from "./components/sections/Hero";
 import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
 import Button from "./components/ui/Button";
+import ScrollToTopButton from "./components/ui/ScrollToTopButton"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Education />
       <Contact />
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

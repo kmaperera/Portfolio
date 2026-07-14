@@ -5,7 +5,7 @@ function SkillBadge({
   return (
     <span
       className={`
-        rounded-full
+        rounded-xl
         bg-slate-800
         border
         border-slate-700

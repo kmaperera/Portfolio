@@ -13,11 +13,19 @@ import worknestApplication from "../assets/images/projects/worknest/application.
 import safedriveDashboard from "../assets/images/projects/safedrive/dashboard.jpeg";
 import safedriveHistory from "../assets/images/projects/safedrive/history.jpeg";
 import safedriveSettings from "../assets/images/projects/safedrive/setting.jpeg";
+import erpCover from "../assets/images/projects/erp/cover.png";
+import worknestCover from "../assets/images/projects/worknest/cover.png";
+import safedriveCover from "../assets/images/projects/safedrive/cover.png";
+
 
 const projects = [
   {
     id: 1,
     title: "University ERP System",
+
+    category: "Academic Group Project",
+
+    coverImage: erpCover,
 
     images: [
       {
@@ -62,11 +70,18 @@ const projects = [
     ],
 
     challenges: [
-    "..."
+      "Designing relational database tables with foreign key constraints.",
+      "Implementing secure authentication with JWT.",
+      "Managing SQL Server stored procedures and complex joins.",
+      "Synchronizing backend APIs with frontend requirements."
     ],
 
     learned: [
-      "..."
+      "Building scalable REST APIs.",
+      "Database design using SQL Server.",
+      "Authentication and authorization.",
+      "Collaborative Git workflow.",
+      "Backend architecture for enterprise applications."
     ],
 
     technologies: [
@@ -76,14 +91,27 @@ const projects = [
       "MS SQL Server",
     ],
 
-    github: "",
+    github: [
+      {
+        name: "Frontend",
+        url: "https://github.com/kmaperera"
+      },
+      {
+        name: "Backend",
+        url: "https://github.com/kmaperera/university-erp-backend"
+      }
+    ],
 
-    demo: "",
+    demo: "https://github.com/kmaperera",
   },
 
   {
     id: 2,
     title: "WorkNest",
+
+    category: "Academic Group Project",
+
+    coverImage: worknestCover,
 
     images: [
       {
@@ -112,8 +140,11 @@ const projects = [
       }
     ],
 
-    description:
+    shortDescription:
       "Job recruitment platform connecting employers and job seekers with authentication, role-based access control, and application management.",
+
+    overview:
+    "WorkNest is a full-stack job recruitment platform that connects employers and job seekers. The system provides secure authentication, role-based access control, job posting, and application management features.",
 
     contribution: [
     "Developed backend APIs",
@@ -149,6 +180,10 @@ const projects = [
     id: 3,
     title: "SafeDrive",
 
+    category: "Academic Group Project",
+
+    coverImage: safedriveCover,
+
     images: [
       {
         label: "Dashboard",
@@ -164,8 +199,11 @@ const projects = [
       }
     ],
 
-    Description:
+    shortDescription:
       "Flutter application that detects driver drowsiness using facial landmark detection and provides real-time alerts.",
+    
+    overview:
+    "SafeDrive is a mobile application developed using Flutter that detects driver drowsiness using facial landmark detection. The app provides real-time alerts to prevent accidents caused by drowsy driving.",
 
     contribution: [
     ""

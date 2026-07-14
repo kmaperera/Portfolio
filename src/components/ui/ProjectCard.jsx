@@ -1,39 +1,45 @@
 import SkillBadge from "./SkillBadge";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import { useState, useEffect } from "react";
 
 function ProjectCard({ project, onView }) {
-  const [activeImage, setActiveImage] = useState(0);
   return (
-    <div className="
+    <div 
+      onClick={()=>onView(project)}
+      className="
           rounded-xl
           overflow-hidden 
-          bg-slate-900 
+          bg-slate-900
+          cursor-pointer 
           hover:border-cyan-400 
           hover:-translate-y-2
           shadow-lg
           hover:shadow-cyan-500/20
-          transition:all
-          duration-300 
+          transition-all
+          duration-300
+          group 
           border 
-          border-slate-800">
+          border-slate-800
+          flex
+          flex-col
+          h-full
+        ">
       <div className="overflow-hidden">
       <img
-        src={project.images[activeImage].image}
-        alt={project.images[activeImage].label}
+        src={project.coverImage}
+        alt={project.title}
         className="
           w-full 
           h-52 
           object-cover
           transition
-          duration-500
+          duration-300
           hover:scale-110"
       />
       
       </div>
 
-      <div className="p-6">
+      <div className="p-6 p-6 flex flex-col flex-1">
         <h3 className="text-2xl font-bold">
           {project.title}
         </h3>
@@ -56,55 +62,16 @@ function ProjectCard({ project, onView }) {
           ))}
         </div>
 
-        <div className="flex gap-4 mt-8">
+        <div className="mt-auto pt-8 flex items-center justify-between">
+          <span className="text-cyan-400 font-medium">
+              Click to view project
+          </span>
 
-          <a
-            href={project.github}
-            className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-          >
-            <FaGithub />
-
-            GitHub
-          </a>
-
-          <a
-            href={project.demo}
-            className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300"
-          >
-            <HiOutlineExternalLink />
-
-            Live Demo
-          </a>
-
-          <button
-              onClick={() => onView(project)}
-              aria-label={`View details for ${project.title}`}
-              className="
-                relative
-                inline-block
-                cursor-pointer
-                text-white
-                hover:text-cyan-300
-                transition-colors
-                duration-300
-
-                after:absolute
-                after:left-0
-                after:bottom-0
-                after:h-[2px]
-                after:w-full
-                after:origin-left
-                after:scale-x-0
-                after:bg-cyan-300
-                after:transition-transform
-                after:duration-300
-                hover:after:scale-x-100
-              "
-          >
-              View Details
-          </button>
-
-        </div>
+          <span className="text-xl transition-transform duration-300 group-hover:translate-x-1">
+              →
+          </span>
+      </div>
+        
       </div>
     </div>
   );

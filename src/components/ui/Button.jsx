@@ -4,7 +4,8 @@ function Button({
   ...props
 }) {
   const base =
-    "px-6 py-3 rounded-lg font-semibold transition duration-300";
+            
+    "px-6 py-3 rounded-lg font-semibold transition duration-300 cursor-pointer";
 
   const styles = {
     primary:
