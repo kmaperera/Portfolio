@@ -249,6 +249,7 @@ function Contact() {
                 hover:bg-cyan-400
                 disabled:opacity-50
                 transition
+                cursor-pointer
               "
             >
               {

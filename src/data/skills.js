@@ -5,7 +5,11 @@ import {
   FaNodeJs,
   FaJava,
   FaGitAlt,
-  FaFigma
+  FaFigma,
+  FaCode,
+  FaLaptopCode,
+  FaServer,
+  FaTools,
 } from "react-icons/fa";
 
 import { 
@@ -27,6 +31,7 @@ import MssqlServer from "../assets/icons/sql-server.svg?react";
 const skills = [
   {
     category: "Programming",
+    icon: FaCode,
     items: [
       {
         name: "Java",
@@ -48,6 +53,7 @@ const skills = [
   },
   {
     category: "Frontend",
+    icon : FaLaptopCode,
     items: [
       {
         name: "React",
@@ -69,6 +75,7 @@ const skills = [
   },
   {
     category: "Backend & Database",
+    icon: FaServer,
     items: [
       {
         name: "Node.js",
@@ -94,6 +101,7 @@ const skills = [
   },
   {
     category: "Tools & Others",
+    icon: FaTools,
     items: [
       {
         name: "Git",

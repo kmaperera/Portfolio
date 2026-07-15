@@ -50,9 +50,18 @@ function Skills() {
                 transition-all
                 duration-300"
             >
-              <h3 className="text-xl font-bold text-cyan-400 mb-8">
-                {group.category}
-              </h3>
+              <div className="flex items-center gap-3 mb-8 whitespace-nowrap">
+                {group.icon && (
+                  <group.icon
+                    className="text-cyan-400 text-xl flex-shrink-0"
+                    aria-hidden="true"
+                  />
+                )}
+
+                <h3 className="text-xl font-bold text-cyan-400">
+                  {group.category}
+                </h3>
+              </div>
 
               <div className="
               grid grid-cols-3 gap-6">

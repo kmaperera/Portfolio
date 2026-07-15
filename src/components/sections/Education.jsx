@@ -25,7 +25,7 @@ function Education() {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2 }}
-        className="text-gray-400 text-center mt-6 max-w-2xl mx-auto h-10"
+        className="text-gray-400 text-center mt-6 mb-8 max-w-2xl mx-auto"
       >
         My academic journey and educational background.
       </motion.p>
@@ -38,8 +38,6 @@ function Education() {
           viewport={{ once: true }}
           className="relative pl-14 pb-14"
         >
-          {/* Circle */}
-          <div className="absolute left-0 top-1 w-8 h-8 rounded-full bg-cyan-500 border-4 border-slate-900"></div>
 
           {/* Card */}
           <div className="
@@ -54,27 +52,47 @@ function Education() {
             transition-all
             duration-300"
           >
+            <div className="flex items-center gap-4">
+
+              {item.logo && (
+                <img
+                  src={item.logo}
+                  alt={`${item.institution} logo`}
+                  className="
+                    w-12
+                    h-12
+                    rounded-lg
+                    object-contain
+                    bg-white
+                    p-1
+                  "
+                />
+              )}
+
+              <div>
+                <h3 className="text-2xl font-bold">
+                  {item.degree}
+                </h3>
+
+                <p className="text-lg text-gray-300 mt-1">
+                  {item.institution}
+                </p>
+              </div>
+
+            </div>
+
             <p className="
               text-cyan-400 
               text-sm
               inline-block
+              mt-5
               px-3
               py-1
               rounded-full
               bg-cyan-500/10
-              text-cyan-400
-              text-sm
-              font-medium"
-            >
+              font-medium
+            ">
               {item.period}
-            </p>
-
-            <h3 className="text-2xl font-bold mt-2">
-              {item.degree}
-            </h3>
-
-            <p className="text-lg text-gray-300 mt-1">
-              {item.institution}
             </p>
 
             <p className="text-gray-400 mt-4 leading-7">

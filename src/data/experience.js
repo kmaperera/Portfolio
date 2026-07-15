@@ -1,6 +1,10 @@
+import sabLogo from "../assets/images/companies/sablogo.jpg";
+import uomLogo from "../assets/images/companies/uomlogo.png"
+
 const experience = [
   {
     company: "SAB Campus - CA Sri Lanka",
+    logo: sabLogo,
     position: "IT Assistant",
     period: "Aug 2024 – Apr 2025",
 
@@ -14,6 +18,7 @@ const experience = [
 
   {
     company: "SAB Campus - CA Sri Lanka",
+    logo: sabLogo,
     position: "IT Intern",
     period: "Aug 2023 – Jul 2024",
 
@@ -27,6 +32,7 @@ const experience = [
 
   {
     company: "University of Moratuwa",
+    logo: uomLogo,
     position: "IT Trainee",
     period: "Feb 2023 – Aug 2023",
 
