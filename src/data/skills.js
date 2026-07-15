@@ -1,11 +1,11 @@
 import {
   FaReact,
-  FaJs,
   FaHtml5,
   FaCss3Alt,
   FaNodeJs,
   FaJava,
-  FaGitAlt
+  FaGitAlt,
+  FaFigma
 } from "react-icons/fa";
 
 import { 
@@ -14,10 +14,15 @@ import {
   SiMysql,
   SiFirebase,
   SiPostman,
-  SiFigma,
   SiDart,
-  SiC
+  SiC,
 } from "react-icons/si";
+
+import {
+  DiJavascript
+} from "react-icons/di"
+
+import MssqlServer from "../assets/icons/sql-server.svg?react";
 
 const skills = [
   {
@@ -29,7 +34,7 @@ const skills = [
       },
       {
         name: "JavaScript",
-        icon: FaJs,
+        icon: DiJavascript,
       },
       { 
         name: "C",
@@ -79,10 +84,11 @@ const skills = [
       },
       { 
         name: "MS SQL Server",
+        icon: MssqlServer,
       },
       {
         name: "Firebase",
-        icon: SiFirebase
+        icon: SiFirebase,
       },
     ],
   },
@@ -99,7 +105,7 @@ const skills = [
       },
       {
         name: "Figma",
-        icon: SiFigma,
+        icon: FaFigma,
       },
     ],
   },

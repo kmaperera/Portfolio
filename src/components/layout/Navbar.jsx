@@ -60,7 +60,6 @@ function Navbar() {
                 smooth={true}
                 duration={500}
                 spy={true}
-                hashSpy={true}
                 offset={-80}
                 activeClass="text-cyan-400"
                 className="cursor-pointer text-gray-300 hover:text-cyan-400 transition-colors"

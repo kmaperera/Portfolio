@@ -14,7 +14,7 @@ function SkillBadge({ skill }) {
     >
       {skill.icon && (
         <skill.icon
-          className="text-4xl"
+          className="text-4xl fill-current"
           aria-hidden="true"
         />
       )}
