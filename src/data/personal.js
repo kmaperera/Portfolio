@@ -1,6 +1,5 @@
 const personal = {
   name: "Malith Perera",
-  greeting: "👋 Hi, I'm",
   roles: [
     "Full Stack Developer",
     "Software Engineer",],

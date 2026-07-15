@@ -38,9 +38,6 @@ function About() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}>
-          <p className="text-cyan-400 text-lg mb-3">
-            {personal.greeting}
-          </p>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
             {personal.name}

@@ -30,7 +30,7 @@ const education = [
     logo: pccLogo,
     period: "2021",
     description:
-      "Commerce Stream",
+      "Completed G.C.E. Advanced Level in the Commerce stream with grades: Accounting (A), Economics (B), and Business Studies (C).",
   },
 
 ];

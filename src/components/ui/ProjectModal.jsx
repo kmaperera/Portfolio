@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import SkillBadge from "./SkillBadge";
+import TechBadge from "./TechBadge";
 import { FaGithub } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { ExternalLink } from "lucide-react";
@@ -304,10 +304,9 @@ function ProjectModal({ project, onClose }) {
 
             <div className="flex flex-wrap gap-3 mt-4">
                 {project.technologies.map((tech) => (
-                    <SkillBadge
+                    <TechBadge
                     key={tech}
-                    skill={tech}
-                    small
+                    tech={tech}
                     />
                 ))}
             </div>

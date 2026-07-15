@@ -157,11 +157,18 @@ const projects = [
     ],
 
     challenges: [
-    "..."
+      "Designing a secure authentication system with JWT and role-based access control.",
+      "Managing relationships between employers, job seekers, job postings, and applications in the MySQL database.",
+      "Developing REST APIs that efficiently handled filtering, searching, and CRUD operations.",
+      "Ensuring smooth communication between the React frontend and Node.js backend while maintaining data consistency."
     ],
 
     learned: [
-      "..."
+      "Building scalable REST APIs using Node.js and Express.",
+      "Implementing secure authentication and authorization using JWT.",
+      "Designing relational databases and optimizing SQL queries in MySQL.",
+      "Collaborating effectively in a team using Git and GitHub.",
+      "Developing a complete full-stack web application from backend to frontend integration."
     ],
 
     technologies: [
@@ -170,7 +177,12 @@ const projects = [
       "MySQL",
     ],
 
-    github: "",
+    github: [
+      {
+        name: "Code",
+        url: "https://github.com/kmaperera/Job-listing-website"
+      },
+    ],
 
     demo: "",
 
@@ -206,15 +218,25 @@ const projects = [
     "SafeDrive is a mobile application developed using Flutter that detects driver drowsiness using facial landmark detection. The app provides real-time alerts to prevent accidents caused by drowsy driving.",
 
     contribution: [
-    ""
+      "Developed the Login and Sign Up screens using Flutter.",
+      "Implemented Dark Mode functionality to improve the user experience.",
+      "Enhanced the mobile UI with responsive layouts for different screen sizes.",
+      "Collaborated with team members to integrate the UI with the application's existing features."
     ],
 
     challenges: [
-    "..."
+      "Creating responsive UI layouts that worked consistently across different mobile screen sizes.",
+      "Implementing Dark Mode while maintaining a consistent design throughout the application.",
+      "Designing user-friendly authentication screens that aligned with the overall application design.",
+      "Integrating UI components smoothly with the project's existing Flutter codebase."
     ],
 
     learned: [
-      "..."
+      "Developing modern and responsive mobile user interfaces using Flutter.",
+      "Implementing theme management with Light and Dark Mode.",
+      "Building authentication screens following mobile UI/UX best practices.",
+      "Working collaboratively in a team using Git and GitHub.",
+      "Improving Flutter development and responsive design skills."
     ],
 
     technologies: [
@@ -223,7 +245,12 @@ const projects = [
       "Firebase",
     ],
 
-    github: "",
+    github: [
+      {
+        name: "Code",
+        url: "https://github.com/kmaperera/Safe-Drive"
+      },
+    ],
 
     demo: "",
 
