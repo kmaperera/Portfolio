@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://malithperera.dev/sitemap.xml
