@@ -59,7 +59,7 @@ function About() {
 
           <div className="flex flex-wrap gap-5 mt-10">
             <a
-              href="/resume.pdf"
+              href="/Malith_Perera_CV.pdf"
               download="Malith_Perera_CV.pdf"
               aria-label="Download Malith Perera's CV as a PDF"
               className="
