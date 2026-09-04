@@ -16,6 +16,14 @@ import safedriveSettings from "../assets/images/projects/safedrive/setting.jpeg"
 import erpCover from "../assets/images/projects/erp/cover.png";
 import worknestCover from "../assets/images/projects/worknest/cover.png";
 import safedriveCover from "../assets/images/projects/safedrive/cover.png";
+import expenseTrackerCover from "../assets/images/projects/expense-tracker/cover.png";
+import expenseTrackerDashboard from "../assets/images/projects/expense-tracker/dashboard.png";
+import expenseTrackerTransactions from "../assets/images/projects/expense-tracker/transactions.png";
+import expenseTrackerReports from "../assets/images/projects/expense-tracker/reports.png";
+import expenseTrackerBudgets from "../assets/images/projects/expense-tracker/budgets.png";
+import expenseTrackerGoals from "../assets/images/projects/expense-tracker/goals.png";
+import expenseTrackerProfile from "../assets/images/projects/expense-tracker/profile.png";
+import expenseTrackerRecurring from "../assets/images/projects/expense-tracker/recurring-transactions.png";
 
 
 const projects = [
@@ -253,6 +261,105 @@ const projects = [
     ],
 
     demo: "",
+
+  },
+
+  {
+    id: 4,
+    title: "Expense Tracker",
+
+    category: "Individual Full-Stack Project",
+
+    coverImage: expenseTrackerCover,
+
+    images: [
+      {
+        label: "Dashboard",
+        image: expenseTrackerDashboard,
+      },
+      {
+        label: "Transactions",
+        image: expenseTrackerTransactions,
+      },
+      {
+        label: "Reports",
+        image: expenseTrackerReports,
+      },
+      {
+        label: "Budgets",
+        image: expenseTrackerBudgets,
+      },
+      {
+        label: "Goals",
+        image: expenseTrackerGoals,
+      },
+      {
+        label: "Recurring Transactions",
+        image: expenseTrackerRecurring,
+      },
+      {
+        label: "Profile",
+        image: expenseTrackerProfile,
+      }
+    ],
+
+    shortDescription:
+      "Full-stack personal finance management application for tracking income and expenses, managing budgets, financial goals, recurring transactions, and generating reports.",
+    
+    overview:
+    "Expense Tracker is an individual full-stack personal finance management application developed to help users track income and expenses, manage categories and budgets, monitor financial goals, automate recurring transactions, and analyze financial activity through dashboards and reports.",
+
+    contribution: [
+      "Designed and developed the complete full-stack application independently",
+      "Implemented JWT Authentication and protected routes",
+      "Developed transaction and category management modules",
+      "Built dashboard APIs with financial summaries and analytics",
+      "Implemented monthly, yearly, and custom date range reports",
+      "Developed CSV and PDF export functionality",
+      "Implemented budget management, budget progress, and spending alerts",
+      "Developed financial goal tracking and progress management",
+      "Implemented recurring transaction management and due transaction generation",
+      "Built and integrated the React frontend with the Node.js REST API",
+      "Deployed the frontend, backend, and MySQL database to production"
+    ],
+
+    challenges: [
+      "Designing a complete full-stack architecture while keeping authentication, business logic, and database operations separated.",
+      "Building flexible transaction search, filtering, sorting, and pagination while maintaining user-specific data access.",
+      "Implementing financial reports and analytics for monthly, yearly, and custom date ranges.",
+      "Calculating budget utilization, actual spending, variance, and spending alerts accurately from transaction data.",
+      "Managing recurring transaction scheduling and automatically generating transactions when they became due.",
+      "Handling frontend and backend integration issues such as authentication state, API errors, CORS, and production environment configuration.",
+      "Deploying the React frontend, Node.js backend, and MySQL database across separate cloud services."
+    ],
+
+    learned: [
+      "Developing a complete full-stack application independently from database design to production deployment.",
+      "Building REST APIs using Node.js and Express with structured controllers, services, middleware, and validation.",
+      "Implementing secure JWT authentication and user-scoped authorization.",
+      "Designing relational database structures and writing MySQL queries for financial data.",
+      "Building reusable React components, protected routes, forms, dashboards, charts, and responsive interfaces.",
+      "Implementing reporting, analytics, CSV export, and PDF generation.",
+      "Managing production environment variables, CORS, API deployment, and database hosting.",
+      "Debugging frontend, backend, database, and deployment issues across a full application lifecycle."
+    ],
+
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Bootstrap"
+    ],
+
+    github: [
+      {
+        name: "Code",
+        url: "https://github.com/kmaperera/expense-tracker"
+      },
+    ],
+
+    demo: "https://expense-tracker-ochre-eta-86.vercel.app/",
 
   },
 ];
